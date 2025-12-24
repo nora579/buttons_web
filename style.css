@@ -1,0 +1,87 @@
+/* Base */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  padding: 12px 20px;
+  margin: 6px;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Colors */
+.primary { background: #005eff; color: #fff; }
+.secondary { background: #444; color: #fff; }
+.success { background: #28a745; color: #fff; }
+.danger { background: #dc3545; color: #fff; }
+.warning { background: #ffc107; color: #000; }
+.info { background: #17a2b8; color: #fff; }
+
+/* Hover */
+.btn:hover:not(:disabled) {
+  filter: brightness(90%);
+}
+
+/* Outline */
+.outline {
+  background: transparent;
+  border: 2px solid currentColor;
+}
+.outline.primary { color: #005eff; }
+.outline.success { color: #28a745; }
+.outline.danger { color: #dc3545; }
+
+/* Sizes */
+.sm { padding: 6px 12px; font-size: 14px; }
+.md { padding: 12px 20px; font-size: 16px; }
+.lg { padding: 16px 28px; font-size: 18px; }
+
+/* Shapes */
+.rounded { border-radius: 12px; }
+.pill { border-radius: 50px; }
+
+/* Icon */
+.icon {
+  gap: 6px;
+}
+
+/* Block */
+.block {
+  width: 100%;
+}
+
+/* Disabled */
+.btn:disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+/* Loading */
+.loading {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+/* Focus (Accessibility) */
+.btn:focus {
+  outline: 3px solid #000;
+  outline-offset: 2px;
+}
+
+/* Dark Mode */
+.dark {
+  background: #111;
+  padding: 15px;
+}
+.dark .btn {
+  color: #fff;
+}
